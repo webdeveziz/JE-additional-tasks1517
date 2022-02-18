@@ -9,7 +9,7 @@ function capitalTheFisrtLetter(str) {
   return strWithoutFirstElem.join(' ')
 }
 
-function createNodeElemForPost(title, text){
+function createNodeElemForPost(title, text){ // Это функция создает пост
   const post = document.createElement('div')
   post.id = 'post'
   post.classList.add('post')
@@ -33,7 +33,7 @@ function createNodeElemForPost(title, text){
   return post
 }
 
-function createNodeElemForComments(email, comment) {
+function createNodeElemForComments(email, comment) { // Это функция создает комментарии
   const postComment = document.createElement('div')
   postComment.classList.add('post__comment')
 
@@ -49,7 +49,7 @@ function createNodeElemForComments(email, comment) {
   return postComment
 } 
 
-async function renderPost(postId) {
+async function renderPost(postId) { // Это асинхронная функция получает данные из сети и в dom выстраивает
   try {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
     if(!response.ok) throw new Error('Ошибочка!')
@@ -68,4 +68,4 @@ async function renderPost(postId) {
 
 }
 
-renderPost(1)
+renderPost(1) // Вызов функции
