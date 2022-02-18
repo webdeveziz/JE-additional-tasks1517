@@ -1,0 +1,45 @@
+.post {
+  border: 1px solid gainsboro;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.post__title {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.post__text {
+  width: 50%;
+  color: #5d2d06;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.post__comments-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post__comment {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin-bottom: 20px;
+  flex: 0 0 100px;
+}
+
+.post-comment__author{
+  text-decoration: underline;
+  color: rebeccapurple;
+  font-size: 20px;
+  cursor: pointer;
+  width: 273px;
+  flex-shrink: 0;
+}
+
+.post__comment-text{
+  font-size: 18px;
+  margin-left: 30px;
+}
