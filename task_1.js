@@ -1,5 +1,5 @@
 function capitalTheFisrtLetter(str) { 
-  // Это я тут хотел сделал функцию, которая сделает первую букву любого приложения заглавным.
+  // Это я тут сделал функцию, которая сделает первую букву любого приложения заглавным.
   // Иначе данные которые приходят из сети все строчные, и на экране они смотрятся не очень)
   const strWithoutFirstElem = str.split(' ').slice(1)
   const firstElemWithoutFirstLetter = str.split(' ').slice(0, 1).join().split('').slice(1).join('')
